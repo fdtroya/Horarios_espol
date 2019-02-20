@@ -5,14 +5,14 @@ import getpass
 import json
 
 
-horarios_path=r'D:\OneDrive - Escuela Superior Politécnica del Litoral\ESPOL\Programacion\Python\Proyectos\Horarios\Results\horarios.json' #editar Directorio del json de horarios
+horarios_path=r'D:\horarios.json' #editar Directorio del json de horarios
 ################################
 
 usuario=input("Ingrese su Usuario...        -")
 contrasenia=getpass.getpass("Ingrese su Contraseña...     -")
 materias=input("Ingrese los Codigos de las Materias separados por (,)       -").upper().split(",")
 #################################
-path=r"D:\OneDrive - Escuela Superior Politécnica del Litoral\ESPOL\Programacion\Python\Proyectos\Horarios\Scrapper\chromedriver.exe"#editar path del chromedriver selenium
+path=r"D:\chromedriver.exe"#editar path del chromedriver selenium
 browser = webdriver.Chrome(path)
 
 #######################################################################################
@@ -37,7 +37,7 @@ if len(horarios)==0:
         horarios = json.load(hr)
 
 notas=fr.consulta_nota(browser,horarios)
-with open(r'D:\OneDrive - Escuela Superior Politécnica del Litoral\ESPOL\Programacion\Python\Proyectos\Horarios\Results\notas.json',"w+") as nt:#editar path del json de notas
+with open(r'D:\notas.json',"w+") as nt:#editar path del json de notas
     json.dump(notas, nt)
 
 
