@@ -74,8 +74,8 @@ ar.close()
 
 #######################################################################################
 horarios_path = (
-    r'D:\OneDrive - Escuela Superior Politécnica del Litoral\ESPOL\Programacion\Python\Proyectos\Horarios\Results\horarios.json')          #Cambiar directorio del json de horaios
-notas_path = r'D:\OneDrive - Escuela Superior Politécnica del Litoral\ESPOL\Programacion\Python\Proyectos\Horarios\Results\notas.json'      #Cambiar directorio del json de notas
+    r'D:\horarios.json')          #Cambiar directorio del json de horaios
+notas_path = r'D:\notas.json'      #Cambiar directorio del json de notas
 #################################
 alltime_best_inidvidual = ""
 alltime_best_score = -100
