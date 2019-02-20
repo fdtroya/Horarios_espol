@@ -67,7 +67,7 @@ def get_rank(profesor,materia,dic_notas):
 
 
 
-info_dir = r"D:\OneDrive - Escuela Superior Politécnica del Litoral\ESPOL\Programacion\Python\Proyectos\Horarios\Results\optimice_info.csv" #Cambier directorio del csv de info (no es un archivo necesario)
+info_dir = r"D:\optimice_info.csv" #Cambier directorio del csv de info (no es un archivo necesario)
 ar = open(info_dir, "w")
 ar.write("")
 ar.close()
